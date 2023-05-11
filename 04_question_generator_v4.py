@@ -1,3 +1,6 @@
+""" Component 3 -
+Generates questions in a random order with repeats"""
+
 """Component 3 - question_generator v1
 Generates questions in a random order
 """
@@ -19,13 +22,13 @@ hard_numbers = [["tekau ma tahi ", "11"], ["tekau ma rua", "12"],
                 ["tekau ma whitu", "17"], ["tekau ma waru", "18"],
                 ["tekau ma iwa", "19"], ["rua tekau", "20"]]
 
-for item in range(10):
-    easy_number = random.choice(easy_numbers)
+for item in range(20):
+    easy_number = random.shuffle(easy_numbers)
 
     # can wrap output making it easier to screenshot
     print(easy_number, end='\t')
 
 print()
 for item in range(10):
-    hard_number = random.choice(hard_numbers)
+    hard_number = random.shuffle(hard_numbers)
     print(hard_number, end='\t')

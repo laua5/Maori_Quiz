@@ -26,9 +26,9 @@ def num_check(question, low, high):
 
 
 # Main Routine
-user_balance = num_check("What difficulty level would you like to play at?"
-                         " (1 for easy), (2 for hard) ", 1, 2)
-if user_balance == 2:
+difficulty_level = num_check("What difficulty level would you like to play at?"
+                             " (1 for easy), (2 for hard) ", 1, 2)
+if difficulty_level == 2:
     print(f"You are playing at hard difficulty")
 else:
     print(f"You are playing at easy difficulty")
