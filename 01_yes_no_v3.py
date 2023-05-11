@@ -7,7 +7,7 @@ efficient.
 show_instructions = ""
 while show_instructions != "x":
     # Ask the user if they have played before
-    show_instructions = input("Have you played this game before?: ").lower()\
+    show_instructions = input("Have you played this quiz before?: ").lower()\
         .strip()
 
     # If they say yes, output 'Program Continues'
