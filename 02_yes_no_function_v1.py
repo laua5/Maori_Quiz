@@ -26,7 +26,7 @@ def yes_no(question_text):
 
 
 # Main routine go here.....
-show_instructions = yes_no("Have you played this game before? ")
+show_instructions = yes_no("Have you played this quiz before? ")
 print(f"You entered '{show_instructions}'")
 print()
 having_fun = yes_no("Are you having fun? ")
