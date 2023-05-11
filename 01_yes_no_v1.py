@@ -1,5 +1,5 @@
 # Ask the user if they have played before
-show_instructions = input("Have you played this game before? :")
+show_instructions = input("Have you played this quiz before? :")
 
 # If they say yes, output 'Program Continues'
 if show_instructions == "yes":
