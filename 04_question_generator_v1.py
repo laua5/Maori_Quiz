@@ -1,5 +1,5 @@
-"""Component 3 - question_generator v2
-Generates all questions and each question only appears once
+"""Component 3 - question_generator v1
+Generates all questions in a random order
 """
 
 
@@ -24,3 +24,8 @@ for item in range(10):
 
     # can wrap output making it easier to screenshot
     print(easy_number, end='\t')
+
+print()
+for item in range(10):
+    hard_number = random.choice(hard_numbers)
+    print(hard_number, end='\t')
