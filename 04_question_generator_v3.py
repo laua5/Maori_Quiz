@@ -36,7 +36,7 @@ else:
 random.shuffle(level)  # Makes sure that each number is only shown once
 
 for i in level:
-    answer = input("Enter the english word for {}: ".format(i[0]))
+    answer = input("Enter the number for {}: ".format(i[0]))
     if answer == i[1]:
         print("well done correct")
         score += 1

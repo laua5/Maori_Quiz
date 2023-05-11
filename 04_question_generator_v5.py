@@ -24,6 +24,7 @@ random.shuffle(easy_numbers)
 for item in range(1):
     print(easy_numbers)
 
+
 random.shuffle(hard_numbers)
 print()
 for item in range(1):
