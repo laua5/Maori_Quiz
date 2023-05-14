@@ -1,4 +1,4 @@
-""" Component 3 -
+""" Component 3 - question_generator v2
 Generates numbers in a random order without repeats (each number
 only appears once) """
 

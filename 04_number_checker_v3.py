@@ -9,7 +9,7 @@ def num_check(question, low, high):
     error = "That was not a valid input\n" \
             "Please enter a number; either {} or {}\n".format(low, high)
 
-    # Keep asking until a valid amount (1-10) is entered
+    # Keep asking until a valid amount (1-2) is entered
     while True:
         try:
             # ask for amount
