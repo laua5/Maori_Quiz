@@ -1,5 +1,5 @@
 """Component 3 - question_generator v3
-Based on v2 but also calculates your final score and gives feedback
+Based on v1 but also calculates your final score and gives feedback
 """
 
 
