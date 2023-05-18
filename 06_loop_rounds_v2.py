@@ -1,4 +1,4 @@
-"""Component 3 - question_generator v3
+"""Component 4 - question_generator v3
 Based on v1 but also calculates your final score and gives feedback
 """
 
