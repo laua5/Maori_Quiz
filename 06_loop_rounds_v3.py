@@ -46,10 +46,14 @@ def generate_question(score):
     return score
 
 
+# Main Routine
 starting_score = 0
 final_score = generate_question(starting_score)
+
+# Shows the final score of the quiz
 print(f"Your final score is {final_score}/10 ")
 
+# Gives feedback on final score
 if final_score < 3:
     print("Your knowledge of Maori numbers is quite poor")
 elif 3 <= final_score <= 7:

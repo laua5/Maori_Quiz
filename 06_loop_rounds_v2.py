@@ -35,6 +35,8 @@ else:
 
 random.shuffle(level)  # Makes sure that each number is only shown once
 
+
+# Checking if answer is correct
 for i in level:
     answer = input("Enter the number for {}: ".format(i[0]))
     if answer == i[1]:
@@ -44,6 +46,8 @@ for i in level:
         print("incorrect")
         score += 0
 
+
+# Gives the final score as well as feedback
 print(f"Your final score is {score}/10")
 if score < 3:
     print("Your knowledge of Maori numbers is quite poor")

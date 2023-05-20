@@ -4,7 +4,7 @@ Components are added here after they have been tested and created"""
 import random
 
 
-# Functions go here
+# Yes no checker function (based off lucky unicorn)
 def yes_no(question_text):
     while True:
 
@@ -42,7 +42,7 @@ def instructions():
     print("-" * 100)
 
 
-# Number Checking function
+# Number Checking function (based off lucky unicorn)
 def num_check(question, low, high):
     error = "That was not a valid input\n" \
             "Please enter a number; either {} or {}\n".format(low, high)
@@ -98,7 +98,7 @@ def generate_question(score):
     return score
 
 
-# statement formatter
+# statement formatter (based off lucky unicorn)
 
 
 # Main routine goes here.....

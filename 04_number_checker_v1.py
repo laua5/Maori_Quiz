@@ -16,7 +16,7 @@ while not 1 <= difficulty_level <= 2:
     difficulty_level = int(input("What difficulty level would you like to "
                                  "play at? "))
 
-
+# Main routine
 if difficulty_level == 1:
     print("You are playing at easy difficulty")
 else:

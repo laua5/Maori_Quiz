@@ -19,12 +19,15 @@ hard_numbers = [["tekau ma tahi ", "11"], ["tekau ma rua", "12"],
                 ["tekau ma whitu", "17"], ["tekau ma waru", "18"],
                 ["tekau ma iwa", "19"], ["rua tekau", "20"]]
 
+
+# Testing loop for 10 questions from list 1
 for item in range(10):
     easy_number = random.choice(easy_numbers)
 
     # can wrap output making it easier to screenshot
     print(easy_number, end='\t')
 
+# Testing loop for 10 questions from list 2
 print()
 for item in range(10):
     hard_number = random.choice(hard_numbers)

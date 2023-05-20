@@ -23,7 +23,7 @@ random.shuffle(hard_numbers)  # Shuffles the list so that there are no repeats
 random.shuffle(easy_numbers)  # Shuffles the list so that there are no repeats
 
 
-# Sets list to hard_numbers
+# Sets list to hard_numbers and prints each question once only
 print(f"Number 1:{(hard_numbers[1])} ")
 print(f"Number 2:{(hard_numbers[2])} ")
 print(f"Number 3:{(hard_numbers[3])} ")

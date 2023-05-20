@@ -20,10 +20,12 @@ hard_numbers = [["tekau ma tahi ", "11"], ["tekau ma rua", "12"],
                 ["tekau ma iwa", "19"], ["rua tekau", "20"]]
 
 
+# Making sure each number from easy_number list appears once only
 random.shuffle(easy_numbers)
 for item in range(1):
     print(easy_numbers)
 
+# Making sure each number from hard_number list appears once only
 random.shuffle(hard_numbers)
 print()
 for item in range(1):
