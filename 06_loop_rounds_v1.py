@@ -37,6 +37,7 @@ random.shuffle(level)  # Makes sure that each number is only shown once
 
 # Checking if answer is correct
 for i in level:
+    # Selecting a random question
     answer = input("Enter the number for {}: ".format(i[0]))
     if answer == i[1]:
         print("well done correct")

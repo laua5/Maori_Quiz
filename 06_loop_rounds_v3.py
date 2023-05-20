@@ -33,13 +33,17 @@ def generate_question(score):
     random.shuffle(level)  # Makes sure that each number is only shown once
     question_number = 1
 
+    # Checking if answer is correct
     for i in level:
         print(f"Question {question_number}")
+        # Selecting a random question
         answer = input("Enter the number for {}: ".format(i[0]))
         question_number += 1
+        # If answer is answered correctly add a point to the score
         if answer == i[1]:
             print("well done correct")
             score += 1
+        # If answer is incorrect keep score the same
         else:
             print("incorrect")
             score += 0

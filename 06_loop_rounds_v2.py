@@ -38,10 +38,13 @@ random.shuffle(level)  # Makes sure that each number is only shown once
 
 # Checking if answer is correct
 for i in level:
+    # Selecting a random question
     answer = input("Enter the number for {}: ".format(i[0]))
+    # If answer is answered correctly add a point to the score
     if answer == i[1]:
         print("well done correct")
         score += 1
+    # If answer is incorrect keep score the same
     else:
         print("incorrect")
         score += 0
