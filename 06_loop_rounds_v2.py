@@ -1,4 +1,4 @@
-"""Component 4 - question_generator v3
+"""Component 4 - loop rounds v2
 Based on v1 but also calculates your final score and gives feedback
 """
 

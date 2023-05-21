@@ -1,4 +1,4 @@
-"""Component 4 - question_generator v3
+"""Component 4 - loop_rounds v3
 Turns v2 into a function and includes the question number
 """
 
