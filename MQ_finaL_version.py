@@ -1,4 +1,4 @@
-"""Maori Quiz base component v3
+"""Maori Quiz final version
 Instructions and text decoration added"""
 
 import random
