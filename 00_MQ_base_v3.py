@@ -1,7 +1,15 @@
-"""Maori Quiz base component v2
-Components added after they have been created and tested"""
+"""Maori Quiz base component v3
+Instructions and text decoration added"""
 
 import random
+
+
+# function to format into text output (based off lucky unicorn)
+def formatter(symbol, text):
+    sides = symbol * 3
+    formatted_text = f"{sides} {text} {sides}"
+    top_bottom = symbol * len(formatted_text)
+    return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
 
 
 # Yes no checker function (based off lucky unicorn)
@@ -30,8 +38,16 @@ def yes_no(question_text):
 def instructions():
     print("**** How to Play ****")
     print()
-    print("The rules of the game will go here")
+    print("First, choose a difficulty level to play at. ")
     print()
+    print("\tDifficulty level 1 is numbers 1-10")
+    print("\tDifficulty level 2 is numbers 11-20")
+    print()
+    print("Each question adds 1 point to your score total. Your final score "
+          "will be given at the end out of 10.")
+    print("Feedback will be given on your final score. See if you can get a "
+          "perfect score!\n")
+    print("-" * 100)
 
 
 # Number Checking function (based off lucky unicorn)
@@ -78,23 +94,28 @@ def generate_question(score):
     question_number = 1
 
     for i in level:
-        print(f"Question {question_number}")
+        print(formatter("|", f"Question {question_number}"))
+        print()
         # Selecting a random question
         answer = input("Enter the number for {}: ".format(i[0]))
         question_number += 1
         # If answer is answered correctly add a point to the score
         if answer == i[1]:
-            print("well done correct")
+            print(formatter("!", "well done correct"))
+            print()
+            print("-" * 50)
             score += 1
         # If answer is incorrect keep score the same
         else:
-            print("incorrect")
+            print(formatter("x", "incorrect"))
+            print()
+            print("-" * 50)
             score += 0
     return score
 
 
 # Main routine goes here.....
-print("Welcome to the Maori Quiz")
+print(formatter("-", "Welcome to the Maori Quiz"))
 played_before = yes_no("Have you played this game before? ")
 
 if played_before == "No":
@@ -105,8 +126,10 @@ difficulty_level = num_check("What difficulty level would you like to play at?"
                              " (1 for easy), (2 for hard) ", 1, 2)
 if difficulty_level == 2:
     print(f"You are playing at hard difficulty")
+    print()
 else:
     print(f"You are playing at easy difficulty")
+    print()
 
 starting_score = 0
 final_score = generate_question(starting_score)
@@ -126,4 +149,4 @@ else:
 
 print("Thanks for playing")
 print()
-print("Goodbye")
+print(formatter("*", "Goodbye"))
